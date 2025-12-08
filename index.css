@@ -1,76 +1,89 @@
 /* 全体のスタイル */
-body {
+body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100vh;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 #outer {
     width: 100%;
-    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ヘッダーのスタイル */
 header {
-    text-align: center;
-    margin-bottom: 50px;
-    background-color: #87cefa; /* lightskyblue を追加 */
-    padding: 20px 0;
-}
-
-#header-container {
-    width: 100%;
+    background-color: #87cefa;
+    padding: 15px 0;
+    flex: 0 0 auto;
 }
 
 h1 {
     margin: 0;
-    padding: 20px;
+    text-align: center;
     color: #333;
+}
+
+/* メインコンテンツ */
+#content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 /* ステップのコンテナ */
 .steps-container {
     display: flex;
     justify-content: space-between;
-    gap: 80px; /* 間隔を広げる */
-    padding: 40px;
-    max-width: 1800px; /* コンテナの最大幅を増やす */
-    margin: 0 auto;
+    align-items: center;
+    gap: 40px;
+    height: calc(100vh - 200px); /* ヘッダーとフッターの高さを考慮 */
+    padding: 0 40px;
 }
 
 /* 各ステップのスタイル */
 .step {
     flex: 1;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
     position: relative;
 }
 
 /* ステップ番号のスタイル */
 .step-number {
-    font-size: 48px; /* サイズを大きく */
+    font-size: 48px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* 説明文のスタイル */
 .step-description {
-    font-size: 24px; /* サイズを大きく */
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
     color: #666;
 }
 
 /* 画像のスタイル */
 .step-image {
+    flex: 1;
     width: 100%;
-    height: auto;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .step-image img {
-    width: 100%;
-    max-width: 600px; /* 画像の最大幅を増やす */
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -79,37 +92,32 @@ h1 {
 .step:not(:last-child)::after {
     content: "▶";
     position: absolute;
-    right: -50px; /* 矢印の位置を調整 */
+    right: -30px;
     top: 50%;
     transform: translateY(-50%);
     color: #ccc;
-    font-size: 24px; /* 矢印のサイズを大きく */
+    font-size: 24px;
 }
 
 /* フッターのスタイル */
 footer {
     text-align: center;
-    margin-top: 50px;
-    color: #666;
-    padding: 20px;
+    padding: 15px;
+    flex: 0 0 auto;
 }
 
 /* レスポンシブデザイン */
 @media (max-width: 1200px) {
     .steps-container {
         flex-direction: column;
-        gap: 50px;
+        height: auto;
     }
     
     .step:not(:last-child)::after {
         content: "▼";
         right: 50%;
         top: auto;
-        bottom: -40px;
+        bottom: -30px;
         transform: translateX(50%);
-    }
-
-    .step-image img {
-        max-width: 100%;
     }
 }
