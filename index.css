@@ -117,12 +117,3 @@ footer {
         transform: translateX(50%);
     }
 }
-    
-    .step:not(:last-child)::after {
-        content: "▼";
-        right: 50%;
-        top: auto;
-        bottom: -30px;
-        transform: translateX(50%);
-    }
-}
