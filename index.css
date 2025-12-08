@@ -18,11 +18,12 @@ body, html {
 /* ヘッダーのスタイル */
 header {
     background-color: #ffffff;
-    padding: 0; /* パディングを0にリセット */
+    padding: 0; 
     flex: 0 0 auto;
-    height: 120px; /* 1.5倍の高さ（通常60pxの1.5倍） */
+    height: 120px;
     display: flex;
-    align-items: flex-end; /* 下揃え */
+    align-items: flex-end;
+    border-bottom: 4px double #202020;
 }
 
 h1 {
