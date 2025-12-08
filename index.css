@@ -17,10 +17,10 @@ body, html {
 
 /* ヘッダーのスタイル */
 header {
-    background-color: #87cefa;
+    background-color: #ffffff;
     padding: 0; /* パディングを0にリセット */
     flex: 0 0 auto;
-    height: 180px; /* 1.5倍の高さ（通常60pxの1.5倍） */
+    height: 120px; /* 1.5倍の高さ（通常60pxの1.5倍） */
     display: flex;
     align-items: flex-end; /* 下揃え */
 }
