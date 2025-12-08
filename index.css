@@ -124,6 +124,10 @@ footer {
     margin-top: auto;
 }
 
+main, #inner, .steps-container, .step {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 /* レスポンシブデザイン時の矢印 */
 @media (max-width: 1200px) {
     .step:not(:last-child)::after {
