@@ -48,7 +48,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    height: calc(100vh - 120px); /* ヘッダーとフッターの高さを考慮 */
+    height: calc(100vh - 200px); /* ヘッダーとフッターの高さを考慮 */
     padding: 0 40px;
 }
 
@@ -109,9 +109,9 @@ h1 {
 /* フッターのスタイル */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     flex: 0 0 auto;
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 /* レスポンシブデザイン時の矢印 */
