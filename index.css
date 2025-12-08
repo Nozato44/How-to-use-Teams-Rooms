@@ -6,6 +6,7 @@ body, html {
     height: 100vh;
     font-family: sans-serif;
     overflow: hidden;
+    background-color: #ffffff; /* 背景色を白に明示的に設定 */
 }
 
 #outer {
@@ -13,6 +14,7 @@ body, html {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #ffffff; /* 背景色を白に明示的に設定 */
 }
 
 /* ヘッダーのスタイル */
@@ -40,6 +42,7 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    background-color: #ffffff;
 }
 
 /* ステップのコンテナ */
@@ -50,6 +53,7 @@ h1 {
     gap: 40px;
     height: calc(100vh - 200px); /* ヘッダーとフッターの高さを考慮 */
     padding: 0 40px;
+    background-color: #ffffff;
 }
 
 /* 各ステップのスタイル */
