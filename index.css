@@ -72,19 +72,20 @@ main {
     height: 100%;
 }
 
-/* 説明文のスタイル */
-.step-description {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #303030; /* 文字色変更 */
-}
-
 /* ステップ番号のスタイル */
 .step-number {
     font-size: 48px;
     font-weight: bold;
-    color: #303030; /* 文字色変更 */
+    color: #202020;
     margin-bottom: 10px;
+    margin-top: 40px; /* 上部の余白を追加 */
+}
+
+/* 説明文のスタイル */
+.step-description {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #202020;
 }
 
 /* 画像のスタイル */
@@ -109,8 +110,7 @@ main {
     content: "▶";
     position: absolute;
     right: -30px;
-    /* 上部（数字と説明文）の位置に合わせて配置 */
-    top: 100px; /* この値を調整して矢印の位置を上下に移動できます */
+    top: 140px; /* 100pxから140pxに変更 */
     transform: translateY(-50%);
     color: #ccc;
     font-size: 24px;
