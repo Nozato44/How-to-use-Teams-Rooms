@@ -111,6 +111,7 @@ footer {
     text-align: center;
     padding: 15px;
     flex: 0 0 auto;
+    margin-top: -10px;
 }
 
 /* レスポンシブデザイン時の矢印 */
