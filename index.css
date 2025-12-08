@@ -18,14 +18,20 @@ body, html {
 /* ヘッダーのスタイル */
 header {
     background-color: #87cefa;
-    padding: 15px 0;
+    padding: 0; /* パディングを0にリセット */
     flex: 0 0 auto;
+    height: 90px; /* 1.5倍の高さ（通常60pxの1.5倍） */
+    display: flex;
+    align-items: flex-end; /* 下揃え */
 }
 
 h1 {
     margin: 0;
     text-align: center;
-    color: #333;
+    color: #202020; /* 文字色変更 */
+    font-size: 32px; /* 文字サイズを大きく */
+    width: 100%;
+    padding-bottom: 15px; /* 下部の余白 */
 }
 
 /* メインコンテンツ */
@@ -56,19 +62,19 @@ h1 {
     position: relative;
 }
 
-/* ステップ番号のスタイル */
-.step-number {
-    font-size: 48px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
 /* 説明文のスタイル */
 .step-description {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #666;
+    color: #202020; /* 文字色変更 */
+}
+
+/* ステップ番号のスタイル */
+.step-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #202020; /* 文字色変更 */
+    margin-bottom: 10px;
 }
 
 /* 画像のスタイル */
