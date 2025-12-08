@@ -1,4 +1,103 @@
-@charset "UTF-8";
+/* 全体のスタイル */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#outer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダーのスタイル */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ステップのコンテナ */
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* 各ステップのスタイル */
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+/* ステップ番号のスタイル */
+.step-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 説明文のスタイル */
+.step-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* 画像のスタイル */
+.step-image {
+    width: 100%;
+    height: auto;
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ステップ間の矢印 */
+.step:not(:last-child)::after {
+    content: "▶";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+/* フッターのスタイル */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #666;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .step:not(:last-child)::after {
+        content: "▼";
+        right: 50%;
+        top: auto;
+        bottom: -25px;
+        transform: translateX(50%);
+    }
+}
+
+
+
+
+
+
+/* @charset "UTF-8";
 body {
 	margin: 0;
 	padding: 0;
@@ -165,4 +264,4 @@ h3 {
 h4 {
 	font-size: 14px;
 }
-}
+} */
