@@ -93,7 +93,8 @@ h1 {
     content: "▶";
     position: absolute;
     right: -30px;
-    top: 50%;
+    /* 上部（数字と説明文）の位置に合わせて配置 */
+    top: 100px; /* この値を調整して矢印の位置を上下に移動できます */
     transform: translateY(-50%);
     color: #ccc;
     font-size: 24px;
@@ -106,12 +107,16 @@ footer {
     flex: 0 0 auto;
 }
 
-/* レスポンシブデザイン */
+/* レスポンシブデザイン時の矢印 */
 @media (max-width: 1200px) {
-    .steps-container {
-        flex-direction: column;
-        height: auto;
+    .step:not(:last-child)::after {
+        content: "▼";
+        right: 50%;
+        top: auto;
+        bottom: -30px;
+        transform: translateX(50%);
     }
+}
     
     .step:not(:last-child)::after {
         content: "▼";
