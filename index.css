@@ -48,7 +48,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    height: calc(100vh - 150px); /* ヘッダーとフッターの高さを考慮 */
+    height: calc(100vh - 120px); /* ヘッダーとフッターの高さを考慮 */
     padding: 0 40px;
 }
 
