@@ -31,7 +31,7 @@ header {
 h1 {
     margin: 0;
     padding: 0;
-    color: #202020;
+    color: #303030;
     font-size: 40px;
     text-align: center;
 }
@@ -76,14 +76,14 @@ main {
 .step-description {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #202020; /* 文字色変更 */
+    color: #303030; /* 文字色変更 */
 }
 
 /* ステップ番号のスタイル */
 .step-number {
     font-size: 48px;
     font-weight: bold;
-    color: #202020; /* 文字色変更 */
+    color: #303030; /* 文字色変更 */
     margin-bottom: 10px;
 }
 
